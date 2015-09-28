@@ -4,7 +4,7 @@ Release 2: Positioning
 ![Page 1](../imgs/Color1.png)
 
 #### 2. Column
-![Page 2](../imgs/Column2.png)
+![Page 2](../imgs/Column2..png)
 
 #### 3. Row
 ![Page 3](../imgs/Rows3.png)
