@@ -12,18 +12,6 @@
 
 #Your Solution Below
 def shortest_string(list_of_words)
-	if list_of_words.length == 0
-		return nil
-	end	
-	list_of_words.each{|word|}
-		if word.length < list_of_words[0].length
-			return word[0]
-		end
-end		
-
-
-
-# def shortest_string(list_of_words)
-#   list_of_words.sort!{|x,y| x.length <=> y.length}
-#   return list_of_words[0]
-# end
+  list_of_words.sort!{|x,y| x.length <=> y.length}
+  return list_of_words[0]
+end
