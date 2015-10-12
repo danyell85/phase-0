@@ -15,6 +15,10 @@ def my_hash_finding_method(source, thing_to_find)
   source.each {|k,v| answer.push(k) if v == thing_to_find}
   return answer
 end
+# my_hash_finding_method(my_family_pets_ages, 3)
+# Identify and describe the Ruby method(s) you implemented.
+# The methods I used were pretty simple. The only new one I used was include?
+# The .include? method returns a boolean value if there is a matach between an input and a data point.
 
 def my_array_modification_method!(source, thing_to_modify)
   new_array = []
@@ -28,7 +32,10 @@ def my_hash_modification_method!(source, thing_to_modify)
   source.each { |k, v| source[k] = v + thing_to_modify }
   return source
 end
-
+# Identify and describe the Ruby method(s) you implemented.
+# For the array I used each to iterate through the array and is_a?(Integer) to single out the numbers then modified the numbers and pushed them to a new_array. 
+# Then I replaced source with the new array.
+# For the hash I used each again to iterate through each key value pair. Then for each key I added to its value.
 
 # Person 3
 def my_array_sorting_method(source)
