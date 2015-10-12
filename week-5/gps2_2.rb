@@ -58,3 +58,18 @@ def grocery(command, list={})
   else raise ArgumentError.New("You didnt enter a correct command")   
   end      
 end
+
+
+# Reflection
+# # What did you learn about pseudocode from working on this challenge?
+# That writing it is a guide map. Writing good pseudocode helps if you get stuck so you can go back and have a line to reference what you are trying to code.
+# # What are the tradeoffs of using Arrays and Hashes for this challenge?
+# Hashes were much easier to use since we wanted to have sets of the data and were related to each other. We wanted the item to have a value of price.
+# # What does a method return?
+# A method returns the last statement it runs. It can return a string value, a number value, a list.
+# # What kind of things can you pass into methods as arguments?
+# To my knowledge you can pass anything to a method, an array, strings, the value of another method, and numbers
+# # How can you pass information between methods?
+# You can pass information between methods by using a global variable which is assigned my using a $ before the variable like $variablename. Or passing it through as an parameter.
+# # What concepts were solidified in this challenge, and what concepts are still confusing?
+# This challenge was helpful to go over the basics of using hashes. We did have a hang up on using string interpolation. We learned that it needs to be "" inside of '' for it to run properly.
