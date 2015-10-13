@@ -1,8 +1,8 @@
 # Calculate the mode Pairing Challenge
 
-# I worked on this challenge [by myself, with: ]
+# I worked on this challenge 
 
-# I spent [] hours on this challenge.
+# I spent 1 hours on this challenge.
 
 # Complete each step below according to the challenge directions and
 # include it in this file. Also make sure everything that isn't code
@@ -42,5 +42,12 @@ def mode(array)
   modes = frequency.select {|k,v| v == frequency.values.max}
   modes.keys
 end  
-
-
+# Reflection
+# Which data structure did you and your pair decide to implement and why?
+#We decided to push the array to a hash so we could use the value as a counter.
+# Were you more successful breaking this problem down into implementable pseudocode than the last with a pair? 
+#We were successful in breaking down the problem. Since this was a different problem I cant say if we did better than my last pair. Both were successful.
+# What issues/successes did you run into when translating your pseudocode to code?
+#Our intial solution ran correctly after I corrected the fact I named variables different in two places.
+# What methods did you use to iterate through the content? Did you find any good ones when you were refactoring? Were they difficult to implement?
+#Refacorting was the best part. We used parition and separated the keys and values then returned the max value. We ended with using select. We also learned that using .count allowed us to not need to set the Hash.new(0) at zero to start the counting like in the intital solution.
