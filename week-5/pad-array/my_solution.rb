@@ -2,7 +2,7 @@
 
 # I worked on this challenge Parminder Singh
 
-# I spent [] hours on this challenge.
+# I spent 1 hours on this challenge.
 
 
 # Complete each step below according to the challenge directions and
@@ -57,3 +57,15 @@ end
 
 
 # 4. Reflection
+# Were you successful in breaking the problem down into small steps?
+# Yes, my pair and I went into pretty good detail in our pseudocode code. 
+# Once you had written your pseudocode, were you able to easily translate it into code? What difficulties and successes did you have?
+# For pad! it went smoothly but in trying to pad with a clone array we werent able to get it to work with just the return statement with the new array. So we went to using .times to iterate over the array.
+# Was your initial solution successful at passing the tests? If so, why do you think that is? If not, what were the errors you encountered and what did you do to resolve them?
+# Our test passed for pad! on the first try, with pad we encountered issues with trying to put it all on one line and used .times on the size_difference to push the new values.
+# When you refactored, did you find any existing methods in Ruby to clean up your code?
+# We were able to on pad! but calling a return statement to push the values if it was true but pad we werent able to.
+# How readable is your solution? Did you and your pair choose descriptive variable names?
+# It seems pretty readable to me, we could have used something more descriptive for new_array like duplicate_array.
+# What is the difference between destructive and non-destructive methods in your own words?
+# Destructive rewrites over the array, non destructive returns a copy of the array with new values added but doesnt change the original copy.
