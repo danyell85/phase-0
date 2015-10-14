@@ -41,15 +41,15 @@ def acct_groups(array)
 end
 acct_groups(copperheads)
 
-What was the most interesting and most difficult part of this challenge?
-It got difficult because I was in a rush and didnt do very good pseudocode. Iterating over the array to turn it into a hash was the most difficult part.
-Do you feel you are improving in your ability to write pseudocode and break the problem down?
-I think since things went so smoothly before I got too confident and didnt break down the steps as clearly. I will be going backt to spending more time on pseudocode code going forward
-Was your approach for automating this task a good solution? What could have made it even better?
-I wanted to add shuffle to it so it switch up the groups each time it ran but stuggled where I should place it.
-What data structure did you decide to store the accountability groups in and why?
-I decided the end should be store in a hash with the key being the group number and the value the list of names.
-What did you learn in the process of refactoring your initial solution? Did you learn any new Ruby methods?
-I used slice to with a range from 0 to 4. It needed to be descurtive to alter the original array when putting into cohort_groups. 
+# What was the most interesting and most difficult part of this challenge?
+# It got difficult because I was in a rush and didnt do very good pseudocode. Iterating over the array to turn it into a hash was the most difficult part.
+# Do you feel you are improving in your ability to write pseudocode and break the problem down?
+# I think since things went so smoothly before I got too confident and didnt break down the steps as clearly. I will be going backt to spending more time on pseudocode code going forward
+# Was your approach for automating this task a good solution? What could have made it even better?
+# I wanted to add shuffle to it so it switch up the groups each time it ran but stuggled where I should place it.
+# What data structure did you decide to store the accountability groups in and why?
+# I decided the end should be store in a hash with the key being the group number and the value the list of names.
+# What did you learn in the process of refactoring your initial solution? Did you learn any new Ruby methods?
+# I used slice to with a range from 0 to 4. It needed to be descurtive to alter the original array when putting into cohort_groups. 
 
  
