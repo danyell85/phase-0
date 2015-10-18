@@ -64,3 +64,11 @@ startup_names.each do |element|
   end
 end
 p startup_names
+
+Reflection
+What are some general rules you can apply to nested arrays?
+Paying attention to what the elements are. It is really easy to think an array is standing alone but it is the element of another array. Starting at the back of them and going through the brackets is what helped me understand how the nesting was working.
+What are some ways you can iterate over nested arrays?
+You can iterate through nested arrays the same what as non nested arrays with .each. You just have to add an additional layer to dig into the nested parts of the array.
+Did you find any good new methods to implement or did you re-use one you were already familiar with? What was it and why did you decide that was a good option?
+I hadnt used .kind_of? before this challenge. It is the same as is_a? I used kind_of because if was in the module information for this challenge. 
