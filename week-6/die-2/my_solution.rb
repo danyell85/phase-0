@@ -1,14 +1,14 @@
 # Input: array of strings
 # Output: random returns one of the strings, raise argurment error if empty array is passes
 # Steps:
-# 1. Raise ArgumentError in initialize method
-# 2. Make instance variables for intialize and sides
-# 3.Return random number between 1 and instance variables.length that is indexed for labels
+# 1. Raise ArgumentError in initialize method for empty array
+# 2. Make instance variables for intialize and labels
+# 3. Return random number between 1 and instance variable.length that is indexed for labels
 
 # 3. Initial Solution
 class Die
   def initialize(labels)
-  	raise ArgumentError.new("Array must not be empty") if labels.length<1
+  	raise ArgumentError.new("Array must not be empty") if labels.length < 1
   	@labels=labels
   end
 
@@ -29,4 +29,4 @@ end
 # # What new methods did you learn when working on this challenge, if any?
 # I didnt use any new methods
 # # What concepts about classes were you able to solidify in this challenge?
-# I dont feel I benefitted from this challenge that much. Last week was a good intro into this challenge. 
+# I dont feel I benefitted from this challenge that much. Last week was a good intro into this challenge and this one didnt require much changing to workl
