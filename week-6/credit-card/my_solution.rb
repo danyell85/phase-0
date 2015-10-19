@@ -13,14 +13,40 @@
 # 8. Conditional state that returns Module 10 of the sum 
 
 
-
-  class CreditCard
+# class CreditCard
+#   def initialize(number)
+#     @number = number.to_s
+#     raise ArgumentError.new("Number needs to be 16 digits!") if @number.length != 16
+#   end  
+    
+#   def times_2
+#     cc_number = @number.split("") 
+#        cc_number.reverse!.each_with_index do |element,index|
+#          if index.odd?
+#            double = element.to_i * 2
+#            cc_number[index] = double.to_s.split("")
+#          end 
+#         end 
+#         cc_number.flatten! 
+#         @sum_of_cc = 0 
+#         cc_number.each do |element|
+#           @sum_of_cc = element.to_i + @sum_of_cc.to_i    
+#        end 
+#     end
+#     def check_card
+#        times_2
+#        return @sum_of_cc % 10 == 0
+#     end     
+#  end  
+# refactored:
+ class CreditCard
      def initialize(number)
        @number = number.to_s
+       @sum_of_cc = 0 
        raise ArgumentError.new("Number needs to be 16 digits!") if @number.length != 16
      end  
     
-     def check_card
+    def times_2
        cc_number = @number.split("") 
        cc_number.reverse!.each_with_index do |element,index|
          if index.odd?
@@ -29,14 +55,16 @@
          end 
         end 
         cc_number.flatten! 
-        sum_of_cc = 0 
-        cc_number.each do |element|
-          sum_of_cc = element.to_i + sum_of_cc.to_i    
-       end   
-       return sum_of_cc % 10 == 0
+        cc_number.each{|element| @sum_of_cc  += element.to_i} # this was the only thing we refactored and was still able to get the code to run.
     end
- end  
-# refactored:
+    
+    def check_card
+       times_2
+       return @sum_of_cc % 10 == 0
+    end     
+ end 
+# try1 = CreditCard.new(4408041234567901)
+# p try1.check_card
 
 #   class CreditCard
 #     def initialize(number)
