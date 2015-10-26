@@ -13,6 +13,29 @@ JOIN arrays of three into a single string
 REVERSE string
 RETURN string
 
+****Going to try to use slice after further reading This wasnt my initial solution. Wanted to practice with other functions: function remove(array, index) {
+  var separateComma = function(int){
+  var string = int.toString().split("").reverse();
+  
+  if (string.length < 4){
+    console.log(string);
+  }; 
+  var sectionsOfThree = []; 
+  var allNums = [];
+  var total = "" ;
+  while (string.length > 0){
+     sectionsOfThree = string.slice(0,3);
+     sectionsOfThree = sectionsOfThree.join("");
+     string = string.slice(3);
+     allNums.push(sectionsOfThree);
+     total = allNums.toString().split("").reverse();
+     total = total.join("")
+  };
+     console.log(total);
+
+};
+separateComma(1343934588805058)
+separateComma(134398)
 */
 //Initial:
 // function separateComma(integer){
