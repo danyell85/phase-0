@@ -4,9 +4,9 @@
 
 // Your mission description:
 // Overall mission: Collect 3 jewels by slaying and dragon, and placing jewels correctly on the crown
-// Goals: defeat a dragon
+// Goals: defeat a dragon, place jewels correctly.
 // Characters: arthur & dragon
-// Objects: Arthur(health, jewels, attack and position. Crown(position)
+// Objects: Arthur(health, jewels, attack and position. Crown(position), dragaon(health jewels, attack)
 
 /* Pseudocode
 Create variable dragon with health, jewels and attack
@@ -75,13 +75,20 @@ function placement(){
 fights();
 placement();
 
+/*Refactored Solution:
+I tried making an interactive game instead of refactoring. 
+Link to it : https://danyell85.github.io/projects/wackamole.html */
+
+
 /* Reflection:
 What was the most difficult part of this challenge?
 Coming up with a game! Also the random function gave me so problems it took me a little bit to understand the + 1. 
 What did you learn about creating objects and functions that interact with one another?
-I loved that the variables are all global and easily accesiable . I created functions as properties of the objects in this game and then called them. In my other I created functions separate from the objects.
+I loved that the variables are all global and easily accesiable. 
 Did you learn about any new built-in methods you could use in your refactored solution? If so, what were they and how do they work?
 I didnt refactor this, I instead tried to create an interactive game with my remaining time. It looks like a kindergarden built it but helped me by creating more objects and functions to better get the grasp of them interating. 
 How can you access and manipulate properties of objects?
+You can access properties of objects by calling them with . notation. ex object.property.
+Changing properties you can by giving them a new value ex.  object.property = newproperty.
 */
 
