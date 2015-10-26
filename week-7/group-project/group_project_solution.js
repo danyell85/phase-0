@@ -35,4 +35,32 @@ Person 2 Armani Pseudocode
  		return (new_array[new_array.length divided by 2] + new_array[(new_array.length divided by 2) - 1]) divided by 2
 
 Person 3: Issac
+function sum(array){
+	var total = 0;
+	for (var position = 0; position < array.length; position++)
+		total += array[position];
+		return total
+}
+
+function mean(array){
+	return (sum(array)/array.length);
+}
+
+function sortNumber(a,b) {
+	return a - b;
+}
+
+function median(array){
+	var new_array = array.sort(sortNumber);
+		if (new_array.length%2 == 1) 
+			return new_array[(new_array.length/2)-0.5];
+		else
+			return (new_array[new_array.length/2] + new_array[(new_array.length/2) - 1])/2;
+}
+
+var a = [1,15,8,19,2,11,100,]
+// console.log(sum(a))
+// console.log(mean(a))
+// console.log(a.sort(sortNumber))
+// console.log(median(a))
 Person 4: Celeste 		
