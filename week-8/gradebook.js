@@ -52,7 +52,6 @@ var scores = [ [80, 70, 70, 100],
 
 // __________________________________________
 // Refactored Solution
-
 var gradebook = {};
 
 for(var i = 0; i <students.length ; i++) {
@@ -87,7 +86,7 @@ How did you iterate over nested arrays in JavaScript?
 We used a for loop. It iterated over students and scores at the same time to assign scores to testScores and make that equal to the student.
 Were there any new methods you were able to incorporate? If so, what were they and how did they work?
 We looked for an average method for Math. like min or max but couldnt find one. I hadnt used push yet in JS but it is the same as Ruby.
-
+/
 */
 
 
