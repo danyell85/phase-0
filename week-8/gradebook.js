@@ -56,26 +56,21 @@ var scores = [ [80, 70, 70, 100],
 var gradebook = {};
 
 for(var i = 0; i <students.length ; i++) {
-  
   gradebook[students[i]] = {testScores:scores[i]};
-  
 };
 
-
-
-gradebook.addScore = function(name,score){
+gradebook.addScore = function(name,score) {
   gradebook[name]["testScores"].push(score);
 };
 
-gradebook.getAverage = function(name){
+gradebook.getAverage = function(name) {
   return average(gradebook[name].testScores)
 };
 
-var average = function(grades){
+var average = function(grades) {
   for (var i = 0, sum = 0; i < grades.length; i++) {
     sum += grades[i]
-  }
-  
+  }  
   return (sum / grades.length);
 };
 
