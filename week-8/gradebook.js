@@ -67,7 +67,7 @@ gradebook.getAverage = function(name) {
   return average(gradebook[name].testScores)
 };
 
-var average = function(grades) {
+function average(grades) {
   for (var i = 0, sum = 0; i < grades.length; i++) {
     sum += grades[i]
   }  
