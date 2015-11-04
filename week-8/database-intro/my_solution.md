@@ -19,7 +19,7 @@ Release 5"
 
 10.SELECT regions.region_name , states.state_name FROM states JOIN states.region_id = regions.id ORDER BY region_id;
 
-![Clueless](/sch1.png)
+![Clueless](sch1.png)
 
 Reflection:
 What are databases for? Databases are used to store data in tables. They use relationships to cut down on processing time.
