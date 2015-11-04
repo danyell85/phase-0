@@ -1,10 +1,10 @@
 One to One:
-![1to1](/imgs/1to1.png)
+![1to1](imgs/1to1.png)
 
 This is a 1 to 1 relationship because there is only one customer id for each customer. The id allows to have their preference only under them. 
 
 Many to Many:
-![many](/imgs/many.png)
+![many](imgs/many.png)
 
 Reflection:
 
