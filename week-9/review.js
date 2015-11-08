@@ -40,5 +40,5 @@ solved();
 //Deciding whether or not to make an object and use the list keyword to call the variables or set them outside the function so they could be accessed.
 //Did you solve the problem in a new way this time?
 //The only new thing was needed to created the answer and guess since I didnt have a spec file to run it againist. 
-Was your pseudocode different from the Ruby version? What was the same and what was different?
-
+//Was your pseudocode different from the Ruby version? What was the same and what was different?
+// The flow of the psuedocode was the same. I think it might be written better using non coding lanugage.
